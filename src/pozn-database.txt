@@ -1,0 +1,29 @@
+sudo -u postgres psql
+
+\l list databases
+\dt list tables
+\c <database> contact database
+
+SELECT column_name, data_type
+FROM information_schema.columns
+WHERE table_name = 'employees';
+
+ column_name |     data_type
+-------------+-------------------
+ employee_id | integer
+ hire_date   | date
+ first_name  | character varying
+ last_name   | character varying
+ department  | character varying
+(5 rows)
+
+
+
+--  f
+treesitter sql
+
+INSERT INTO CustomerCarts (CustomerID, CartName) VALUES (1, 'one');
+INSERT INTO CustomerCarts (CustomerID, CartName) VALUES (2, 'two');
+INSERT INTO CustomerCarts (CustomerID, CartName) VALUES (3, 'three');
+INSERT INTO CustomerCarts (CustomerID, CartName) VALUES (4, 'four');
+INSERT INTO CustomerCarts (CustomerID, CartName) VALUES (5, 'five');
